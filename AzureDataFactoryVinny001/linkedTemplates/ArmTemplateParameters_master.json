@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "AzureDataFactoryVinny001"
+		},
+		"LS_ADLSConnectionVinny_accountKey": {
+			"value": ""
+		},
+		"LS_BlobConnectionVinny_connectionString": {
+			"value": ""
+		},
+		"LS_SQLconnection_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=azuresqlservervinny.database.windows.net;Initial Catalog=azuresqldatabasevinny;User ID=Vinatha"
+		},
+		"LS_ADLSConnectionVinny_properties_typeProperties_url": {
+			"value": "https://adfladlsgen2vinny.dfs.core.windows.net/"
+		},
+		"LS_ADLSConnectionVinny2_properties_typeProperties_url": {
+			"value": "https://adfladlsgen2vinny.dfs.core.windows.net/"
+		},
+		"LS_BlobConnectionVinny2_properties_typeProperties_connectionString_secretName": {
+			"value": "BlobConnectionString"
+		},
+		"LS_HTTPConnection_properties_typeProperties_url": {
+			"value": "@{linkedService().BaseURL}"
+		},
+		"LS_KeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://adfkeyvalutvinny.vault.azure.net/"
+		},
+		"Storage trigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/d554af37-9aeb-4bab-83a7-a144f368257f/resourceGroups/ADFVinny/providers/Microsoft.Storage/storageAccounts/adfblobstoragevinny"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
