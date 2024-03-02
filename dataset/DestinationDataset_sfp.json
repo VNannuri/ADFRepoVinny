@@ -1,0 +1,24 @@
+{
+	"name": "DestinationDataset_sfp",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLSConnectionVinny",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Books_Customer",
+				"fileSystem": "refined"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

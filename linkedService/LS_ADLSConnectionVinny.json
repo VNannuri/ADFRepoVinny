@@ -1,0 +1,12 @@
+{
+	"name": "LS_ADLSConnectionVinny",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://adfladlsgen2vinny.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEQ3RTM4OUU0LUE0MTMtNDA3OC04RjBDLTBFQTUyMjVGMzVGMF8wYWQ3ZmExNy05YTE0LTRhYmYtOWU5NS0zNDIzY2ViNjhmMjIiDQp9"
+		}
+	}
+}

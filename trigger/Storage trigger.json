@@ -1,0 +1,24 @@
+{
+	"name": "Storage trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_LoadFile fromBlobto SQLDB",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/csvfiles/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/d554af37-9aeb-4bab-83a7-a144f368257f/resourceGroups/ADFVinny/providers/Microsoft.Storage/storageAccounts/adfblobstoragevinny",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

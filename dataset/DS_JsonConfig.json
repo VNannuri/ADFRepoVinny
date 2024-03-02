@@ -1,0 +1,33 @@
+{
+	"name": "DS_JsonConfig",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_BlobConnectionVinny2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "config_file2.json",
+				"container": "config"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"SourceBaseURL": {
+					"type": "string"
+				},
+				"SourceRelativeURL": {
+					"type": "string"
+				},
+				"sinkFileName": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

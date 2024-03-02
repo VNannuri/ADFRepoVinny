@@ -1,0 +1,32 @@
+{
+	"name": "DS_input01",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_BlobConnectionVinny2",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"SourceFiles": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().SourceFiles",
+					"type": "Expression"
+				},
+				"container": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
